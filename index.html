@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: rgb(216, 218, 220);
+    }
+    .header {
+      background-color: #f0f0f0;
+      color: #121111;
+      padding: 20px;
+      text-align: center;
+    }
+    .logo {
+      width: 150px;
+      height: auto;
+    }
+    .banner {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    footer {
+  background-color: #080808; 
+  color: white; 
+  padding: 20px;
+}
+  </style>
+</head>
+<body>
+    <a href="#home">HOME</a>
+    &nbsp; &nbsp;
+    <a href="gallerypage.html">NEWS GALLERY</a>
+    &nbsp; &nbsp;
+  <header class="header">
+    
+    <img src="data:image/png;base64,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" align="left" height="50" width="50"></center>
+    <h1 class="banner">Hindustan Times</h1>
+  </header>
+  <center>
+  <h4>‘How can a state block a highway?’ the bench of Justices Surya Kant and Ujjal Bhuyan asked Haryana through the state government's counsel.
+    The Supreme Court on Friday directed the Haryana government to open the barricaded Shambhu border and regulate traffic, and in a stinging remark, asked Haryana how any state government could ‘block a highway.’
+    </h4></center>
+<center><img src="https://feeds.abplive.com/onecms/images/uploaded-images/2024/06/24/88c04d43267eac393d7edf2d20d76acc1719201033829785_original.webp?impolicy=abp_cdn&imwidth=1200&height=675" width="850" height="350"></center>
+<center><p>The barricaded Haryana border at Shambhu.</p></center>
+<p>The Supreme Court on Friday directed the Haryana government to open the barricaded Shambhu border and regulate traffic, and in a stinging remark, asked Haryana how any state government could ‘block a highway.’</p>
+    <p>The observation by the bench of Justice Bhuyan and Justice Surya Kant, came after it was informed by the counsel that Haryana was in the process of approaching the Supreme Court against the July 10 order of the Punjab and Haryana high court which directed the state to resume traffic within seven days at Shambhu.
+
+        The border between Punjab and Haryana has been heavily barricaded and closed since February 13, when various farmer organisations from Punjab began moving towards Delhi in support of various demands, including a legal guarantee to minimum support price (MSP) for crops.</p>
+        <p>However, clashes with Haryana Police and central security forces followed, and farmers were unable to cross the border, and have been camping there since then.
+
+            However, welcoming the high court's order, the farmers stated that they will resume their march to the national capital.
+            
+            “It is now clear that it was Haryana that had blocked the national highway and caused inconvenience to both us and lakhs of people. We will meet on July 16 after barricades are removed as ordered by the high court,” farmer leader Sarwan Singh Pandher of the Kisan Mazdoor Sangharsh Committee (KMSC) said.
+            
+            According to Ramandeep Singh Mann of the Kisan Mazdoor Morcha (KMM), the ‘Delhi Chalo’ call was never called off.
+            
+            “We will ask the authorities concerned to designate a venue in Delhi to allow us to protest peacefully,” said Mann.
+            
+            </p>
+        <footer>
+    <p>&copy; 2024 News. All rights reserved.</p>
+    <p>Contact: info@hindustantimesnews.com</p>
+    </footer>
+</body>
+</html>

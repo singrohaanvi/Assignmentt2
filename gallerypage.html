@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: rgb(235, 240, 235);
+    }
+    .header {
+      background-color: #060505;
+      color: #f2f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+    .logo {
+      width: 150px;
+      height: auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .news-snippet {
+      width: 30%;
+      margin: 10px;
+      border: 1px solid #f2f0f0;
+      padding: 10px;
+    }
+    .news-snippet img {
+      width: 100%;
+      height: 150px;
+    }
+    footer {
+  background-color: #161212; 
+  color: white; 
+  padding: 20px;
+}
+  </style>
+</head>
+<body>
+  <header class="header">
+        <img src="data:image/png;base64,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" align="left" height="30" width="30"></center>
+
+    <center><h2>News Gallery</h2></center>
+
+
+</header>
+
+  <main>
+    <div class="gallery">
+
+      <div class="news-snippet">
+        <center><img src="https://images.hindustantimes.com/img/2024/07/12/550x309/Delhi_CM_Arvind_Kejriwal_1720773815213_1720773815885.jpg" height="300" width="200"></center>
+        <h3>Delhi court extends Arvind Kejriwal’s judicial custody till July 25 in case registered by CBI</h3>
+      </div>
+      <div class="news-snippet">
+        <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/938911_Wallpaper2_1720766398479.jpg" height="300" width="200">
+      <h3>Gautam Gambhir requests BCCI for ex-Pakistan bowling coach and South Africa great Morne Morkel: Report</h3>  
+    </div>
+    <div class="news-snippet">
+        <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/Aircraft-carriers-and-warships-from-India--US--Jap_1720778215244.jpg" height="300" width="200">
+    <h3>Quad foreign ministers likely to meet in Tokyo on July 28</h3>
+    </div>
+<div class="news-snippet">
+<img src="https://images.hindustantimes.com/img/2024/07/12/550x309/Candidates-coming-out-of-Bhonwal-Institute-of-Engi_1684678679877_1720762964631.jpg" height="300" width="200">
+<h3>CUET UG 2024 Result Live: NTA CUET UG results, final answer key awaited</h3>
+</div>
+<div class="news-snippet">
+    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/UT-school-education-director-Harsuhinderpal-Singh-_1719605586609_1720766740776.jpg" height="300" width="200">
+    <h3>Vocabulary Made Easy series: Word hard to taste success in competitive exams</h3>
+</div>
+<div class="news-snippet">
+    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/Divyanka_Tripathi_1720774380301_1720774391048.jpg" height="300" width="200">
+    <h3>'Our money situation sorted. We've not lost everything': Divyanka Tripathi says after losing passport, cash in Italy</h3>
+</div>
+<div class="news-snippet">
+    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/Lucky-Ali-is-releasing-a-song--Tu-Hai-Kahaan--with_1712295742401_1720766898829.jpg" height="300" width="200">
+    <h3>Lucky Ali says it's a ‘lonely thing’ to be a Muslim today: The world will call you a terrorist</h3>
+</div>
+<div class="news-snippet">
+    <img src="https://www.hindustantimes.com/ht-img/img/2024/05/20/550x309/Entertainment_News_1716196587643_1716196587841.jpeg" height="300" width="200">
+    <h3>Prince Harry honored with Pat Tillman Award for Service at The ESPYS</h3>
+</div>
+<div class="news-snippet">
+    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/Akshay_Kumar_1720694837368_1720761750628.jpg" height="300" width="200">
+    <h3>Akshay Kumar says he recalled his father's death to shoot emotional scenes in Sarfira: ‘I don’t use glycerine'
+    </h3>
+</div>
+<div class="news-snippet">
+    <img src="https://www.hindustantimes.com/ht-img/img/2024/02/16/550x309/MixCollage-16-Feb-2024-11-26-AM-7988_1708063037275_1708063072390.jpg" height="300" width="200">
+    <h3>National Cabbage Day 2024: Cabbage dishes from various regions of India worth trying
+    </h3>
+</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 News. All rights reserved.</p>
+    <p>Contact: info@hindustantimesnews.com</p>
+  </footer>
+</body>
+</html>
